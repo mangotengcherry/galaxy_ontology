@@ -58,8 +58,12 @@ plt.rcParams['font.family'] = 'Malgun Gothic'
 plt.rcParams['axes.unicode_minus'] = False
 
 # ── 경로 설정 ──
-DATA_DIR = r"C:\Users\admin\Downloads"
-OUTPUT_DIR = r"C:\Users\admin\OneDrive\바탕 화면\Claude_Code\galaxy_ontology"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR_LOCAL = os.path.join(SCRIPT_DIR, "data")
+DATA_DIR_DOWNLOADS = r"C:\Users\admin\Downloads"
+# 프로젝트 내 data/ 폴더를 우선 사용, 없으면 Downloads 폴더 참조
+DATA_DIR = DATA_DIR_LOCAL if os.path.isdir(DATA_DIR_LOCAL) else DATA_DIR_DOWNLOADS
+OUTPUT_DIR = SCRIPT_DIR
 
 print("=" * 80)
 print("  Galaxy Schema + Ontology 기반 반도체 수율 예측 모델 성능 검증")

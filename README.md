@@ -173,7 +173,7 @@ Best Model ·························· Ridge (Ontology)
 # 필요 패키지 설치
 pip install scikit-learn pandas numpy shap xgboost lightgbm matplotlib seaborn networkx
 
-# 데이터 파일을 Downloads 폴더에 배치 후 실행
+# 실행 (data/ 폴더의 CSV를 자동 참조)
 python galaxy_ontology_yield_test.py
 ```
 
@@ -186,7 +186,13 @@ galaxy_ontology/
 ├── README.md                                # 프로젝트 설명 및 결과 리포트
 ├── galaxy_ontology_yield_test.py            # 전체 검증 코드 (Phase 0~5)
 ├── galaxy_ontology_yield_test_result.png    # 9패널 시각화 결과
-└── 갤럭시 스키마, 온톨로지, 수율 예측 모델.docx  # 원본 분석 보고서
+├── 갤럭시 스키마, 온톨로지, 수율 예측 모델.docx  # 원본 분석 보고서
+└── data/
+    ├── 01_wafer_tabular_raw.csv             # 웨이퍼 원시 데이터 (500행)
+    ├── 02_ontology_process_bin_relation.csv  # 공정→Bin 인과관계
+    ├── 03_ontology_bin_hierarchy.csv         # Bin 계층 구조
+    ├── 04_ontology_equipment_history.csv     # 장비 이력 메타데이터
+    └── 05_wafer_phase1_enhanced.csv          # 온톨로지 통합 데이터 (500행)
 ```
 
 ---

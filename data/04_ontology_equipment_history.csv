@@ -1,0 +1,4 @@
+equipment_id,avg_defect_rate_30d,maintenance_days_ago,equipment_grade
+EQ_A,0.12,5,A
+EQ_B,0.08,15,A
+EQ_C,0.18,2,B

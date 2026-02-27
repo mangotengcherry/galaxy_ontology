@@ -1,0 +1,7 @@
+process_step,caused_bin,confidence,relation_type
+CVD_SiO2,BIN_SHORT,0.85,causes
+CVD_SiO2,BIN_LEAKAGE,0.6,causes
+ETCH_CH,BIN_OPEN,0.9,causes
+ETCH_WL,BIN_OPEN,0.75,causes
+CMP_1,BIN_SHORT,0.7,causes
+CMP_2,BIN_LEAKAGE,0.65,causes
